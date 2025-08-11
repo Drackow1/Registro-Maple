@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  padding: 30px 40px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 1.8px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#resultados {
+  margin-top: 30px;
+}
+
+#lista {
+  list-style: none;
+  margin-top: 20px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  padding: 15px;
+  background: #fafafa;
+}
+
+#lista li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e1e4e8;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+#lista li:last-child {
+  border-bottom: none;
+}
+
+table {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+.form-row > * {
+  flex: 1 1 150px;
+  min-width: 150px;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

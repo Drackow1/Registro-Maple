@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Ganhos</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Ganhos</h1>
+
+    <div class="form-row">
+      <select id="personagemSelect">
+        <option value="">-- Selecione --</option>
+      </select>
+      <input type="text" id="novoPersonagem" placeholder="Novo personagem" />
+    </div>
+
+    <label for="ganho">Ganho diário:</label>
+    <input type="number" id="ganho" placeholder="Ganho diário" />
+
+    <div class="form-row">
+      <label for="modoResultado">Modo de Resultado:</label>
+      <select id="modoResultado">
+        <option value="total">Total Geral</option>
+        <option value="individual">Individual</option>
+      </select>
+
+      <button id="salvar">Salvar</button>
+      <button id="verResultados">Ver Resultados</button>
+    </div>
+
+    <h2>Dados Registrados</h2>
+    <ul id="lista"></ul>
+
+    <h2>Resultados</h2>
+    <div id="resultados"></div>
+  </div>
+
+  <script src="./src/script.js"></script>
+</body>
+</html>
